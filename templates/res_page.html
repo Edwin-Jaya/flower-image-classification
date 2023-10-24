@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>What Flower Is It?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<script>
+   function goBack() {
+     window.history.back();
+   }
+</script>
+<body>
+   <button onclick="goBack()" class="btn btn-success" style="border: 0; display: block;margin-left: auto;margin-right: auto;padding: 15px;margin-top: 1pc;margin-bottom: 1pc;">< Okay, Go Back</button>
+   <img src="static/image/{{img}}" style="display: block;margin-left: auto;margin-right: auto;width: 50%;" class="img-rounded"/>
+   <div class="container">
+      <h2 style="text-align: center;">Ta-da! Here's the result</h2>   
+      <table class="table table-hover">
+      <thead>
+         <tr>
+            <th>Result Name</th>
+            <th>Probability</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>{{result[0]}}<td>{{prob[0]}}</td>
+         </tr>
+         <tr>
+            <td>{{result[1]}}<td>{{prob[1]}}</td>
+         </tr>
+         <tr>
+            <td>{{result[2]}}<td>{{prob[2]}}</td>
+         </tr>
+      </tbody>
+      </table>
+   </div>
+ 
+</body>
+</html>
